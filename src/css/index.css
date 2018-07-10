@@ -1,0 +1,206 @@
+/* 页面样式 */
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+/* 网站头部 */
+header {
+    width: 100%;
+}
+header .main {
+    padding: 0;
+    background-color: #2735750a;
+}
+header .main .brand {
+    float: left;
+    padding: 0.2rem 0.5rem 0 0.5rem;
+}
+header .main .company {
+    float: left;
+    font-size: 1.4rem;
+    color: #273575;
+    line-height: 3.5rem;
+}
+header .main .tel {
+    float: right;
+    font-size: 1.4rem;
+    color: #273575;
+    line-height: 3.5rem;
+    margin-right: 2rem;
+}
+header .main ul {
+    text-align: center;
+}
+header .main ul li {
+    display: inline-block;
+    margin-right: -0.5rem;
+}
+header .main ul li + li {
+    border-left: 1px solid #27357536;
+}
+header .main ul li a {
+    display: inline-block;
+    padding: 0 1.5rem;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #273575;
+    text-decoration: none;
+}
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active {
+    color: #ffffff;
+    background-color: #273575;
+}
+
+/* 网站主体内容 */
+.container {
+    width: 100%;
+}
+.swiper-container {
+    text-align: center;
+    width: 100%;
+}
+.environment .title {
+    font-size: 3.2rem;
+    color: #273575;
+    font-weight: bold;
+}
+.container .environment .en-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 120rem; */
+}
+.environment-item {
+    margin: 0;
+    padding: 1rem;
+}
+.environment-item img {
+    width: 24rem;
+    height: 16rem;
+}
+
+/* 网站尾部 */
+footer {
+    width: 100%;
+}
+/* 基本默认值 */
+html {
+    font-size: 62.5%;
+    color: #222;
+}
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+/* 工具样式 */
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.hide {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+.invisible {
+    visibility: hidden;
+}
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* 媒体查询实现页面响应式 */
+/* 1rem = 16px */
+@media only screen and (max-width: 50rem) {
+    header .main {
+        background-color: green;
+    }
+    /* header .main .brand {
+        margin-left: 2rem;
+    } */
+}
+@media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
+    header .main .tel {
+        display: none;
+    }
+    header .main .brand {
+        margin-left: 0.5rem;
+    }
+    header .main ul {
+        float: right;
+    }
+    header .main ul li a {
+        padding: 0 1.1rem;
+        font-size: 1.3rem;
+        color: #273575;
+        text-decoration: none;
+    }
+}
+@media only screen and (max-width: 30rem) {
+    header .main .tel {
+        display: none;
+    }
+    header .main .company {
+        display: none;
+    }
+    header .main .brand {
+        margin-left: 0.5rem;
+    }
+    header .main ul {
+        float: right;
+    }
+    header .main ul li a {
+        padding: 0 1.2rem;
+        font-size: 1.3rem;
+        color: #273575;
+        text-decoration: none;
+    }
+}
