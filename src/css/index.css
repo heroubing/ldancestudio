@@ -1,5 +1,6 @@
 /* 页面样式 */
 body {
+    max-width: 100%;
     font-size: 1.2rem;
     line-height: 1.5;
     background-color: #f7f7f7;
@@ -15,6 +16,7 @@ a:hover, a:active {
 /* 网站头部 */
 header {
     width: 100%;
+    /* margin-bottom: -0.2rem; */
 }
 header .main {
     padding: 0;
@@ -22,19 +24,26 @@ header .main {
 }
 header .main .brand {
     float: left;
-    padding: 0.2rem 0.5rem 0 0.5rem;
+    padding: 0.6rem 0.5rem 0 0.8rem;
+    /* text-align: center; */
+    justify-content: center;
+    /* line-height: 4rem; */
+}
+header .main .brand img {
+    width: 3rem;
+    height: 3rem;
 }
 header .main .company {
     float: left;
     font-size: 1.4rem;
     color: #273575;
-    line-height: 3.5rem;
+    line-height: 4.2rem;
 }
 header .main .tel {
     float: right;
     font-size: 1.4rem;
     color: #273575;
-    line-height: 3.5rem;
+    line-height: 4rem;
     margin-right: 2rem;
 }
 header .main ul {
@@ -50,7 +59,7 @@ header .main ul li + li {
 header .main ul li a {
     display: inline-block;
     padding: 0 1.5rem;
-    line-height: 3.5rem;
+    line-height: 4.2rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: #273575;
@@ -68,6 +77,7 @@ header .main ul li a.active {
 .container {
     width: 100%;
     text-align: center;
+    /* margin-top: -0.4rem; */
 }
 .model {
     /* padding: 1rem 3rem; */
@@ -178,7 +188,7 @@ header .main ul li a.active {
 .contact-us .newmedia li a {
     display: inline-block;
     padding: 1rem 0 0 3rem;
-    font-size: 3.5rem;
+    font-size: 4.2rem;
     color: #fff;
     text-decoration: none;
 }
@@ -276,7 +286,7 @@ li {
 }
 /* 媒体查询实现页面响应式 */
 /* 1rem = 16px */
-@media only screen and (min-width: 72.5rem) {
+@media only screen and (min-width: 1160px) {
     .model {
         /* padding: 1rem 3rem; */
         padding: 1rem 3rem;
@@ -288,7 +298,7 @@ li {
         padding-bottom: 2rem;
     }
 }
-@media only screen and (min-width: 50rem) and (max-width: 72.5rem) {
+@media only screen and (min-width: 800px) and (max-width: 1159px) {
     .model {
         /* padding: 1rem 3rem; */
         padding: 1rem 1.3rem;
@@ -332,7 +342,7 @@ li {
         text-align: center;
     }
 }
-@media only screen and (min-width: 37.5rem) and (max-width: 50rem) {
+@media only screen and (min-width: 600px) and (max-width: 799px) {
     /* 顶部导航栏样式 */
     header .main .tel {
         display: none;
@@ -433,7 +443,7 @@ li {
         text-align: center;
     }
 }
-@media only screen and (min-width: 30rem) and (max-width: 37.5rem) {
+@media only screen and (min-width: 480px) and (max-width: 599px) {
         /* 顶部导航栏样式 */
         header .main .tel {
             display: none;
@@ -540,7 +550,7 @@ li {
             text-align: center;
         }
 }
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 479px) {
     /* 顶部导航栏样式 */
     header .main .tel {
         display: none;
