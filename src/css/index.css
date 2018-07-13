@@ -56,6 +56,7 @@ header .main ul li a {
     color: #273575;
     text-decoration: none;
 }
+
 header .main ul li a:hover,
 header .main ul li a:active,
 header .main ul li a.active {
@@ -66,34 +67,150 @@ header .main ul li a.active {
 /* 网站主体内容 */
 .container {
     width: 100%;
-}
-.swiper-container {
     text-align: center;
-    width: 100%;
 }
-.environment .title {
+.model {
+    /* padding: 1rem 3rem; */
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+.title {
     font-size: 3.2rem;
     color: #273575;
     font-weight: bold;
+    text-align: left;
+    margin-bottom: 1rem;
 }
-.container .environment .en-image {
+.title .container-icon {
+    float: left;
+    font-size: 2.6rem;
+    color: #27357586;
+    text-align: left;
+    margin: 0.2rem 0.5rem 0 0;
+}
+.container .model .en-image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 120rem; */
+    justify-content: space-between;
 }
 .environment-item {
     margin: 0;
-    padding: 1rem;
 }
 .environment-item img {
-    width: 24rem;
-    height: 16rem;
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(34, 34, 34, 0.5);
 }
-
+.container .courses {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+}
+.course-content {
+    padding: 1rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #273575;
+    /* font-weight: bold; */
+}
+.course-content .course-item {
+    width: 28%;
+    font-size: 2.2rem;
+}
+.icon {
+    font-size: 10rem;
+}
+.courses .course-content .item-title a {
+    display: inline-block;
+    color: #273575;
+    text-decoration: none;
+}
+.courses .course-content .item-title a:hover,
+.courses .course-content .item-title a:active,
+.courses .course-content .item-title a.active {
+    color: #ff4d00;
+}
+.item-detail {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-align: left;
+    /* justify-content: space-between; */
+    text-align: justify
+}
+.video {
+    height: 20rem;
+}
+.ldance {
+    display: flex;
+    flex-direction: row;
+    background-color: #1e295c;
+}
 /* 网站尾部 */
+.about-us {
+    width: 68%;
+    padding: 2rem 5rem;
+}
+.about-us-title {
+    color: #fff;
+    font-size: 1.8rem;
+}
+.about-us-content {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+.contact-us {
+    width: 32%;
+    padding: 2rem 5rem 2rem 0;
+}
+.contact-us .right {
+    text-align: right;
+}
+.contact-us .newmedia {
+    text-align: right;
+}
+.contact-us .newmedia li {
+    display: inline-block;
+}
+.contact-us .newmedia li a {
+    display: inline-block;
+    padding: 1rem 0 0 3rem;
+    font-size: 3.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+.contact-us .newmedia li a:hover,
+.contact-us .newmedia li a:active {
+    color: #999;
+}
+.none {
+    display: none;
+}
 footer {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 2rem;
+    background-color: #f7f7f7;
+}
+.footer-icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.footer-contact {
+    width: 60%;
+    color: #1e295c;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.copyright {
+    width: 40%;
+    text-align: right;
+    color: #1e295c;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
 /* 基本默认值 */
 html {
@@ -159,15 +276,64 @@ li {
 }
 /* 媒体查询实现页面响应式 */
 /* 1rem = 16px */
-@media only screen and (max-width: 50rem) {
-    header .main {
-        background-color: green;
+@media only screen and (min-width: 72.5rem) {
+    .model {
+        /* padding: 1rem 3rem; */
+        padding: 1rem 3rem;
+        margin: 0 auto;
+        background-color: #f8f8f8;
     }
-    /* header .main .brand {
-        margin-left: 2rem;
-    } */
+    .environment-item {
+        width: 30%;
+        padding-bottom: 2rem;
+    }
 }
-@media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
+@media only screen and (min-width: 50rem) and (max-width: 72.5rem) {
+    .model {
+        /* padding: 1rem 3rem; */
+        padding: 1rem 1.3rem;
+        margin: 0 auto;
+        background-color: #f8f8f8;
+    }
+    .environment-item {
+        width: 32%;
+        padding-bottom: 2rem;
+    }
+    .title {
+        font-size: 2.8rem;
+        margin-left: 2rem;
+    }
+    .title .container-icon {
+        font-size: 2.2rem;
+    }
+    .course-content {
+        padding: 1rem 7rem;
+    }
+    .course-content .course-item {
+        width: 28%;
+        font-size: 2.2rem;
+    }
+    .icon {
+        font-size: 7rem;
+    }
+    .contact-us .newmedia li a {
+        padding: 1rem 0 0 1.5rem;
+        font-size: 2.4rem;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 50rem) {
+    /* 顶部导航栏样式 */
     header .main .tel {
         display: none;
     }
@@ -180,11 +346,202 @@ li {
     header .main ul li a {
         padding: 0 1.1rem;
         font-size: 1.3rem;
-        color: #273575;
         text-decoration: none;
     }
+    .model {
+        /* padding: 1rem 3rem; */
+        padding: 1rem 1rem;
+        margin: 0 auto;
+        background-color: #f8f8f8;
+    }
+    .environment-item {
+        width: 30%;
+        padding-bottom: 2rem;
+    }
+    .title {
+        font-size: 2.1rem;
+        margin-left: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .title .container-icon {
+        font-size: 1.7rem;
+        margin-top: 0.1rem;
+        margin-right: 0.3rem;
+    }
+    .course-content {
+        padding: 1rem 4rem;
+    }
+    .course-content .course-item {
+        width: 28%;
+        font-size: 2.2rem;
+    }
+    .icon {
+        font-size: 5rem;
+    }
+    .courses .course-content .item-title a {
+        font-size: 2rem;
+    }
+    .about-us {
+        text-align: center;
+        width: 100%;
+        padding: 1.2rem 3rem 0.6rem 3rem;
+    }
+    .about-us-content {
+        color: #fff;
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+        line-height: 1.6rem;
+        text-align: justify;
+    }
+    .contact-us {
+        display: none;
+    }
+    .none {
+        margin-top: -0.1rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: 0;
+        background-color: #1e295c;
+    }
+    .about-us-title {
+        font-size: 1.6rem;
+    }
+    .contact-us .newmedia {
+        text-align: center;
+    }
+    .contact-us .newmedia li a {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        font-size: 2.4rem;
+        color: #fff;
+        text-decoration: none;
+    }
+    .contact-us .newmedia li a:hover,
+    .contact-us .newmedia li a:active {
+        color: #999;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 30rem) and (max-width: 37.5rem) {
+        /* 顶部导航栏样式 */
+        header .main .tel {
+            display: none;
+        }
+        header .main .brand {
+            margin-left: 0.5rem;
+        }
+        header .main ul {
+            float: right;
+        }
+        header .main ul li a {
+            padding: 0 1.1rem;
+            font-size: 1.3rem;
+            text-decoration: none;
+        }
+        .model {
+            padding: 1rem 1rem;
+            margin: 0 auto;
+            background-color: #f8f8f8;
+        }
+        .environment-item {
+            width: 50%;
+            padding-bottom: 2rem;
+        }
+        .title {
+            font-size: 2.1rem;
+            margin-left: 0.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .title .container-icon {
+            font-size: 1.7rem;
+            margin-top: 0.1rem;
+            margin-right: 0.3rem;
+        }
+        .course-content {
+            padding: 1rem 1rem;
+        }
+        .course-content .course-item {
+            width: 30%;
+        }
+        .icon {
+            font-size: 4rem;
+        }
+        .courses .course-content .item-title a {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .item-detail {
+            margin-top: 0.2rem;
+            font-size: 1.3rem;
+            text-align: left;
+            /* justify-content: space-between; */
+            text-align: justify
+        }
+        .about-us {
+            text-align: center;
+            width: 100%;
+            padding: 1.2rem 1.8rem 0.6rem 1.8rem;
+        }
+        .about-us-content {
+            color: #fff;
+            font-size: 1.3rem;
+            margin: 0.5rem 0;
+            line-height: 1.6rem;
+            text-align: justify;
+        }
+        .contact-us {
+            display: none;
+        }
+        .none {
+            margin-top: -0.1rem;
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 0;
+            background-color: #1e295c;
+        }
+        .about-us-title {
+            font-size: 1.6rem;
+        }
+        .contact-us .newmedia {
+            text-align: center;
+        }
+        .contact-us .newmedia li a {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            font-size: 2.4rem;
+            color: #fff;
+            text-decoration: none;
+        }
+        .contact-us .newmedia li a:hover,
+        .contact-us .newmedia li a:active {
+            color: #999;
+        }
+        footer {
+            display: none;
+        }
+        .footer-contact {
+            width: 100%;
+            text-align: center;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+        }
 }
 @media only screen and (max-width: 30rem) {
+    /* 顶部导航栏样式 */
     header .main .tel {
         display: none;
     }
@@ -200,7 +557,100 @@ li {
     header .main ul li a {
         padding: 0 1.2rem;
         font-size: 1.3rem;
-        color: #273575;
         text-decoration: none;
+    }
+    .model {
+        /* padding: 1rem 3rem; */
+        padding: 1rem 0.5rem;
+        margin: 0 auto;
+        background-color: #f8f8f8;
+    }
+    .environment-item {
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+    .title {
+        font-size: 2rem;
+        margin-left: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .model .en-image img {
+        width: 14rem;
+    }
+    .title .container-icon {
+        font-size: 1.7rem;
+        margin-top: 0.1rem;
+        margin-right: 0.3rem;
+    }
+    .course-content {
+        padding: 1rem 1rem;
+    }
+    .course-content .course-item {
+        width: 30%;
+    }
+    .icon {
+        font-size: 4rem;
+    }
+    .courses .course-content .item-title a {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .item-detail {
+        margin-top: 0;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        text-align: left;
+        text-align: justify;
+    }
+    .about-us {
+        text-align: center;
+        width: 100%;
+        padding: 1.2rem 1.4rem 0.6rem 1.4rem;
+    }
+    .about-us-content {
+        color: #fff;
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+        line-height: 1.6rem;
+        text-align: justify;
+    }
+    .contact-us {
+        display: none;
+    }
+    .none {
+        margin-top: -0.1rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: 0;
+        background-color: #1e295c;
+    }
+    .about-us-title {
+        font-size: 1.6rem;
+    }
+    .contact-us .newmedia {
+        text-align: center;
+    }
+    .contact-us .newmedia li a {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        font-size: 2.4rem;
+        color: #fff;
+        text-decoration: none;
+    }
+    .contact-us .newmedia li a:hover,
+    .contact-us .newmedia li a:active {
+        color: #999;
+    }
+    footer {
+        display: none;
+    }
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
     }
 }

@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/iconfont.css" />
+    <link rel="stylesheet" href="js/vendor/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="js/vendor/dist/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
     <!-- 网站头部 -->
-    <header>
+    <header class="clearfix">
         <nav class="main">
-            <div class="brand"><a href="#"><img src="../images/logo.png" alt="回到首页" /></a></div>
+            <div class="brand"><a href="#"><img src="images/logo.png" alt="回到首页" /></a></div>
             <span class="company">李若婷舞蹈工作室</span>
             <span class="tel"><span class="iconfont icon-msnui-telephone"></span> 咨询热线：18746619966</span>
             <ul>
@@ -29,46 +29,137 @@
     <!-- 网站主题内容 -->
     <div class="container">
         <!-- banner轮播图 -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../images/banner1_L.png" alt="L.dance Stuido"></div>
-                <div class="swiper-slide"><img src="../images/banner2_L.png" alt="L.dance Stuido"></div>
+        <div class="banner">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/banner1.png" alt="L.Dance Studio">
+                </div>
+                <div class="item">
+                    <img src="images/banner2.png" alt="L.Dance Studio">
+                </div>
             </div>
-            <!-- 分页器 -->
-            <div class="swiper-pagination"></div>
         </div>
         <!-- 舞房环境 -->
-        <div class="environment">
-            <div class="title">L.Dance 舞房环境</div>
+        <div class="model environment">
+            <div class="title">
+                <span class="iconfont icon-4-copy container-icon"></span>
+                <span>L.Dance 舞房环境</span>
+            </div>
             <div class="en-image">
-                <div class="environment-item"><img src="../images/wanda_1.jpg" alt="L.dance Environment"></div>
-                <div class="environment-item"><img src="../images/wanda_2.jpg" alt="L.dance Environment"></div>
-                <div class="environment-item"><img src="../images/wanda_3.jpg" alt="L.dance Environment"></div>
-                <div class="environment-item"><img src="../images/tangren_1.jpg" alt="L.dance Environment"></div>
-                <div class="environment-item"><img src="../images/tangren_2.jpg" alt="L.dance Environment"></div>
-                <div class="environment-item"><img src="../images/tangren_3.jpg" alt="L.dance Environment"></div>
+                <div class="environment-item">
+                    <picture>
+                        <source srcset="images/tangren1_L.jpg" media="(min-width: 72.5em)">
+                        <source srcset="images/tangren1_m.jpg" media="(min-width: 50em)">
+                        <img src="images/tangren1_s.jpg" alt="L.dance 舞房介绍 - 唐人店（1）">
+                    </picture>
+                </div>
+                <div class="environment-item">
+                    <picture>
+                        <source srcset="images/tangren2_L.jpg" media="(min-width: 72.5em)">
+                        <source srcset="images/tangren2_m.jpg" media="(min-width: 50em)">
+                        <img src="images/tangren2_s.jpg" alt="L.dance 舞房介绍 - 唐人店（2）">
+                    </picture>
+                </div>
+                <div class="environment-item">
+                    <picture>
+                        <source srcset="images/tangren3_L.jpg" media="(min-width: 72.5em)">
+                        <source srcset="images/tangren3_m.jpg" media="(min-width: 50em)">
+                        <img src="images/tangren3_s.jpg" alt="L.dance 舞房介绍 - 唐人店（3）">
+                    </picture>
+                </div>
+                <div class="environment-item">
+                    <picture>
+                        <source srcset="images/wanda1_L.jpg" media="(min-width: 72.5em)">
+                        <source srcset="images/wanda1_m.jpg" media="(min-width: 50em)">
+                        <img src="images/wanda1_s.jpg" alt="L.dance 舞房介绍 - 万达店（1）">
+                    </picture>
+                </div>
+                <div class="environment-item">
+                    <picture>
+                        <source srcset="images/wanda2_L.jpg" media="(min-width: 72.5em)">
+                        <source srcset="images/wanda2_m.jpg" media="(min-width: 50em)">
+                        <img src="images/wanda2_s.jpg" alt="L.dance 舞房介绍 - 万达店（2）">
+                    </picture>
+                </div>
+                <div class="environment-item">
+                    <picture>
+                        <source srcset="images/wanda3_L.jpg" media="(min-width: 72.5em)">
+                        <source srcset="images/wanda3_m.jpg" media="(min-width: 50em)">
+                        <img src="images/wanda3_s.jpg" alt="L.dance 舞房介绍 - 万达店（3）">
+                    </picture>
+                </div>
             </div>
         </div>
         <!-- 课程介绍 -->
-        <div class="courses">
-
+        <div class="model courses">
+            <div class="title">
+                <span class="iconfont icon-kecheng container-icon"></span>
+                <span>L.Dance 课程介绍</span>
+            </div>
+            <div class="course-content">
+                <div class="course-item common">
+                    <span class="iconfont icon-wudao1 icon"></span>
+                    <div class="item-title"><a href="#">常规流行班</a></div>
+                    <div class="item-detail">面对零基础学员，通过学习好看易学的成品舞片段，短期内即可迅速掌握舞蹈基础，仅需利用平日课余时间，即可成为舞蹈达人。</div>
+                </div>
+                <div class="course-item vacation">
+                    <span class="iconfont icon-wudaodaoli icon"></span>
+                    <div class="item-title"><a href="#">寒暑假期班</a></div>
+                    <div class="item-detail">寒暑假期班利用假期时间进行集训，分班次教学，满足不同层次学员需求。假期结束前足迹集体拍摄舞蹈成品和联欢活动，为学员提供展示自己的舞台。</div>
+                </div>
+                <div class="course-item personal">
+                    <span class="iconfont icon-wudao icon"></span>
+                    <div class="item-title"><a href="#">精品私教课</a></div>
+                    <div class="item-detail">想专门学习某一只舞蹈？想排练一个舞蹈节目？或希望得到专属指导加速提升舞技？那么就选择私教课程吧。由你定制时间，定制课程内容。</div>
+                </div>
+            </div>
+        </div>
+        <!-- 精彩视频 -->
+        <!-- <div class="model video">
+            <div class="title">
+                <span class="iconfont icon-shipin container-icon"></span>
+                <span>L.Dance 精彩视频</span>
+            </div>
+        </div> -->
+    </div>
+    <!-- 李若婷舞蹈品牌 -->
+    <div class="ldance">
+        <div class="about-us">
+            <div class="about-us-title">李若婷舞蹈品牌</div>
+            <div class="about-us-content">李若婷舞蹈品牌（L.Dance Studio）是大庆李若婷工作室旗下的街舞文化交流和推广的专业机构，成立于2012年；目前在大庆市拥有两家品牌旗舰门店，分别位于让区昆仑唐人中心和萨区新村万达广场；是全国街舞执行委员会CSDA三星级会员单位、IPDA世界流行舞蹈协会五星级会员单位、IRSC国际注册执业认证中心高级资质认证机构；大庆专项爵士舞潮流教学领创品牌。</div>
+        </div>
+        <div class="contact-us">
+            <div class="about-us-title right">关注我们，随时互动</div>
+            <ul class="newmedia">
+                <li class="media-item"><a class="iconfont icon-weixin" href="#"></a></li>
+                <li class="media-item"><a class="iconfont icon-meipai" href="#"></a></li>
+                <li class="media-item"><a class="iconfont icon-weibo" href="#"></a></li>
+                <li class="media-item"><a class="iconfont icon-douyinduanshipin" href="#"></a></li>
+            </ul>
         </div>
     </div>
+    <div class="contact-us none">
+        <div class="about-us-title">关注我们，随时互动</div>
+        <ul class="newmedia">
+            <li class="media-item"><a class="iconfont icon-weixin" href="#"></a></li>
+            <li class="media-item"><a class="iconfont icon-meipai" href="#"></a></li>
+            <li class="media-item"><a class="iconfont icon-weibo" href="#"></a></li>
+            <li class="media-item"><a class="iconfont icon-douyinduanshipin" href="#"></a></li>
+        </ul>
+    </div>
+
     <!-- 网站尾部 -->
     <footer>
-        <!-- <div>大庆市李若婷舞蹈工作室</div> -->
+        <div class="footer-contact">
+            <span class="iconfont icon-msnui-telephone footer-icon"></span>18746619966（李老师） <span class="iconfont icon-dizhi1 footer-icon"></span>萨尔图区万达写字楼B座811、812室 | 让胡路区唐人写字楼B栋1820、1821室
+        </div>
+        <div class="copyright">Copyright © 2012-2018 L.Dance.ALL Rights Reserved | 京ICP备 12003892号-11</div>
     </footer>
-    <script src="js/swiper-4.3.3.min.js"></script>
-    <script>        
-        var mySwiper = new Swiper ('.swiper-container', {
-            autoplay: true,
-            // 分页器
-            pagination: {
-            el: '.swiper-pagination',
-            }
-        })        
-    </script>
+
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/vendor/dist/owl.carousel.min.js"></script>
+    <script src="js/vendor/picturefill.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
-
-<!-- 273575 -->
+<!-- ff4d00 -->
