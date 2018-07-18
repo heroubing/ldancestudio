@@ -9,7 +9,7 @@ var csso = require('gulp-csso')
 gulp.task('default', function () {
   var jsFilter = filter('**/*.js', {restore: true})
   var cssFilter = filter('**/*.css', {restore: true})
-  var indexHtmlFilter = filter(['**/*', '!**/index.html'], {restore: true})
+  var indexHtmlFilter = filter(['**/*'], {restore: true})
 
   return gulp.src('src/index.html')
     .pipe(useref())

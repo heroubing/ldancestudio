@@ -51,8 +51,9 @@ header .main ul {
 }
 header .main ul li {
     display: inline-block;
-    margin-right: -0.5rem;
+    margin-left: -0.3rem;
 }
+
 header .main ul li + li {
     border-left: 1px solid #27357536;
 }
@@ -352,6 +353,11 @@ li {
     }
     header .main ul {
         float: right;
+        /* clear: both; */
+        /* display: inline-block; */
+        /* margin-left: -3rem; */
+        /* text-align: right; */
+
     }
     header .main ul li a {
         padding: 0 1.1rem;
