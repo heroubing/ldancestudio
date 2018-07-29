@@ -1,0 +1,194 @@
+body {
+  max-width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  /* background-color: #f7f7f7; */
+}
+.container-course {
+  width: 100%;
+}
+.class-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.class-title {
+  padding: 0 0.4rem;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 30%;
+  color: #273575;
+  font-weight: bold;
+}
+.class-detail {
+  padding: 0.6rem 3rem 0.6rem 1.6rem;
+  width: 70%;
+  color: #273575;
+  font-size: 1.4rem;
+}
+.personal .class-title {
+  color: #086600;
+}
+.personal .class-detail {
+  color: #086600;
+}
+.vacation .class-title {
+  color: #630066;
+}
+.vacation .class-detail {
+  color: #630066;
+}
+.table-common {
+  /* justify-content: center; */
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  /* color: #273575; */
+  border-bottom: 1px solid #27357536;
+}
+.common {
+  color: #273575;
+}
+.vacation {
+  color: #630066;
+}
+.personal {
+  color: #086600;
+}
+.vacation {
+  background-color: #fff;
+}
+.table-common-adult {
+  padding: 0rem 6rem 2rem 0rem;
+}
+.table-common-child {
+  padding: 0rem 0rem 2rem 6rem;
+}
+.pure-table td,
+.pure-table th {
+  padding: 0.5em 3em; /* cell padding */
+}
+.personal .pure-table thead {
+  background-color: #086600;
+}
+.personal .pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #08660017;
+}
+.vacation .pure-table thead {
+  background-color: #630066;
+}
+.vacation .pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #63006617;
+}
+/* 媒体查询实现页面响应式 */
+/* 1rem = 16px */
+@media only screen and (min-width: 1160px) {
+  .pure-table td,
+  .pure-table th {
+    padding: 0.5em 2.1em; /* cell padding */
+  }
+  .table-common-adult {
+    padding: 0rem 6rem 2rem 0rem;
+  }
+  .table-common-child {
+    padding: 0rem 0rem 2rem 6rem;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1159px) {
+  .pure-table td,
+  .pure-table th {
+    padding: 0.5em 1.1em; /* cell padding */
+  }
+  .table-common-adult {
+    padding: 0rem 2.8rem 2rem 0rem;
+  }
+  .table-common-child {
+    padding: 0rem 0rem 2rem 2.8rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .pure-table td,
+  .pure-table th {
+    padding: 0.5em 2.3em; /* cell padding */
+  }
+  .table-common-adult {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .table-common-child {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .class-item {
+    flex-direction: column;
+  }
+  .class-title {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 80%;
+  }
+  .class-detail {
+    margin-top: -0.5rem;
+    padding: 0rem 1rem;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+  .pure-table td,
+  .pure-table th {
+    padding: 0.5em 2em; /* cell padding */
+    font-size: 1.2rem;
+  }
+  .table-common-adult {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .table-common-child {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .class-item {
+    flex-direction: column;
+  }
+  .class-title {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    text-align: left;
+    width: 80%;
+  }
+  .class-detail {
+    margin-top: -0.5rem;
+    padding: 0rem 1rem;
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .pure-table td,
+  .pure-table th {
+    padding: 0.5em 2em; /* cell padding */
+    font-size: 0.9rem;
+  }
+  .table-common-adult {
+    padding: 0rem 1rem 1.5rem 1rem;
+  }
+  .table-common-child {
+    padding: 0rem 1rem 1.5rem 1rem;
+  }
+  .class-item {
+    flex-direction: column;
+  }
+  .class-title {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    text-align: left;
+    width: 80%;
+  }
+  .class-detail {
+    margin-top: -0.5rem;
+    padding: 0rem 1rem;
+    width: 80%;
+    font-size: 1rem;
+  }
+}

@@ -16,6 +16,7 @@ a:hover, a:active {
 /* 网站头部 */
 header {
     width: 100%;
+    border-bottom: 1px solid #27357536;
     /* margin-bottom: -0.2rem; */
 }
 header .main {

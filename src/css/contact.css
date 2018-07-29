@@ -1,0 +1,26 @@
+.iconreset {
+  font-size: 2.5rem;
+}
+.container-contact .title {
+  margin-top: 1rem;
+  margin-bottom: -0.5rem;
+}
+.en-introduction p {
+  margin: 0 auto;
+  width: 90%;
+  color: #273575;
+}
+.en-introduction {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: #273575;
+}
+.split {
+  border-top: 2px dashed #27357517;
+  width: 100%;
+}
+.p {
+  margin: 0 auto;
+  width: 90%;
+  line-height: 2.2rem;
+}

@@ -1,0 +1,21 @@
+/* .container-environment {
+  padding-top: 1rem;
+} */
+.item-en {
+  padding-top: 1rem;
+}
+.en-introduction p {
+  margin: 2rem auto;
+  width: 90%;
+  font-size: 1.4rem;
+  color: #273575;
+  text-align: center;
+  font-weight: bold;
+}
+.iconreset {
+  font-size: 2.5rem;
+}
+.split {
+  border-top: 2px dashed #27357517;
+  width: 100%;
+}
