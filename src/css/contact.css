@@ -19,8 +19,47 @@
   border-top: 2px dashed #27357517;
   width: 100%;
 }
+.contactbg {
+  background-color: #fff;
+}
 .p {
   margin: 0 auto;
   width: 90%;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
+}
+.p div {
+  display: block;
+}
+.scan {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.scan img {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+  height: 10rem;
+}
+/* 媒体查询实现页面响应式 */
+/* 1rem = 16px */
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .scan img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+  .scan img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .scan img {
+    width: 7rem;
+    height: 7rem;
+  }
 }
